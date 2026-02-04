@@ -2,8 +2,9 @@ import java.util.Scanner;
 public class DecimalToBinary {
     static int rev(int n){
         int rev =0;
+        int div =0;
         while(n!=0){
-            int div = n%10;
+            div = n%10;
             rev = rev*10 + div;
             n= n/2;
         }
@@ -18,6 +19,7 @@ public class DecimalToBinary {
             bn = bn*10 + m;
             n = n/2;
         }
-        System.out.println(rev(bn)/10);
+        int x = (rev(bn)/10);
+        System.out.println(x);
     }
 }
