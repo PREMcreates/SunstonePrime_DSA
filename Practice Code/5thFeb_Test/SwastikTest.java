@@ -53,6 +53,5 @@ public class SwastikTest {
             
             System.out.println();
         }
-
     }
 }
