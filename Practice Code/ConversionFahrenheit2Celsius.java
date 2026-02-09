@@ -10,7 +10,7 @@ public class ConversionFahrenheit2Celsius {
         int step = sc.nextInt();
 
         for (int i = MinF; i <= MaxF; i += step) {
-            double celsius = (int)((5.0 / 9) * (i - 32)); 
+            int celsius = (5*(i - 32)/9); 
             System.out.println(i +"\t"+celsius);
         }
     }
