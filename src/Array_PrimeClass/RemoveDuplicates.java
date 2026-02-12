@@ -11,23 +11,18 @@ public class RemoveDuplicates {
                 k++;
             }
         }
-        // //printing array after removing
-        // for(int i=0; i<nums.length; i++){
-        //     System.out.println(nums[i]);
-        // }
         return k;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int [] nums = new int[10];
+
         //insert array elements in acsending order
         for(int i=0; i<nums.length; i++){
             nums[i] = sc.nextInt();
         }
-        System.out.println(removeDuplicate(nums));
-        //printing array after removing
-        for(int i=0; i<nums.length; i++){
-            System.out.println(nums[i]);
-        }
+        System.out.println("value of k : "+ removeDuplicate(nums));
+       
+        sc.close();
     }
 }
