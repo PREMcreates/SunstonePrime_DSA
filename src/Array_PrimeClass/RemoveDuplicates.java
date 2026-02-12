@@ -11,6 +11,12 @@ public class RemoveDuplicates {
                 k++;
             }
         }
+        // after removing 
+        System.out.print("after removing duplicates : ");
+        for(int i=0; i<k; i++){
+            System.out.print(nums[i]+" ");
+        }
+        System.out.println();
         return k;
     }
     public static void main(String[] args) {
