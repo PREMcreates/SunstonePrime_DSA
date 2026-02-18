@@ -10,7 +10,7 @@ public class HappyNumber_Leetcode {
             return true;
         }
         else{
-             while (n != 1 && n!=4) {
+            while (n != 1 && n!=4) {
             sum = 0;
             temp = n;
             while (temp != 0) {
@@ -19,7 +19,7 @@ public class HappyNumber_Leetcode {
                 temp = temp / 10;
             }
             n = sum;
-        }
+            }
         }
 
         if (sum == 1) {
