@@ -20,7 +20,7 @@ public class HackerRank_seriesbyLoops {
             for (int j = 1; j <= n; j++) {
                 System.out.print(s+" ");
                 g++;
-                s = s+ (int)(b*Math.pow(2,g));
+                s = s + (int)(b*Math.pow(2,g));
             }
         }
 
