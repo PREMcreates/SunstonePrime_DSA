@@ -22,7 +22,7 @@ public class Leetcode_ProductArrayExceptItself {
         }
         //printing output
         for(int i=0; i<arr.length; i++){
-            System.out.println(ans[i]);
+            System.out.print(ans[i]+" ");
         }
         
     }
