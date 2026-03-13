@@ -13,7 +13,7 @@ public class Array_Wave_Print_Rowwise {
                 arr[i][j] = sc.nextInt();
             }
         }
-        //printing output
+        //logic to print
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
                 System.out.print(arr[i][j]+" ");
