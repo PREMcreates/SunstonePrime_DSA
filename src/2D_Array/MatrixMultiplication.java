@@ -30,7 +30,7 @@ public class MatrixMultiplication {
         //printing the result
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){
-                System.out.print(result[i][j]);
+                System.out.print(result[i][j]+" ");
             }
             System.out.println();
         }
