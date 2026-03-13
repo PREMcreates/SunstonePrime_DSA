@@ -1,5 +1,3 @@
-package src.Vector_PrimeClass;
-
 import java.util.Vector;
 
 public class Basic {
