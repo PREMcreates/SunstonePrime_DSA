@@ -22,8 +22,7 @@ public class Column_Sum {
                 index = j;
             }
         }
-        System.out.println(j+" ");
-        System.out.print(ans);
-
+        System.out.println((index+1)+" "+ans);
+        
     }
 }
