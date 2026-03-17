@@ -13,6 +13,7 @@ public class Column_Sum {
         int sum = 0, ans = 0, index = 0;
         int i, j;
         for(j=0; j<n; j++){
+            sum = 0;
             for(i=0; i<n; i++){
                 sum = sum + arr[i][j];
             }
