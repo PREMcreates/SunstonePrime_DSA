@@ -5,25 +5,26 @@ public class Insertion_Sort {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[5];
         //input array
+        System.out.println("Before Sorting");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
-        //selection sort
-        for (int i = 0; i < arr.length; i++) {
-            int min = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[min]) {
-                    min = j;
-                }
+        //insertion sort
+        int n = arr.length;
+        for(int i=1; i<n; i++){
+            int key = arr[i];
+            int j = i-1;
+            while(arr[j]>key && j>=0){
+                arr[j+1] = arr[j];
+                j--;
             }
-            //swap
-            int temp = arr[i];
-            arr[i] = arr[min];
-            arr[min] = temp;
+            arr[j+1] = key;
         }
+        
 
         //printing sorted array
+        System.out.println("After Sorting");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
