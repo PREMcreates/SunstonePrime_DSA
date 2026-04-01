@@ -32,13 +32,19 @@ public class MedianofSortedArrays {
     public static double findMedianSortedArrays(int[] arr1, int[] arr2){
         List<Integer> arr3 = mergeArrays(arr1, arr2);
         int size = arr3.size();
+        double median = 0;
 
         if(size % 2 != 0){
             int mid = size/2;
-            
+            median = arr3.get(mid);
+        }
+        else{
+            int mid1 = size/2;
+            int mid2 = (size/2) - 1;
+            median = (double) ((arr3.get(mid1)+arr3.get(mid2))/2);
         }
 
-        return 0;
+        return median;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
