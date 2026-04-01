@@ -1,4 +1,3 @@
-package Leetcode;
 import java.util.*;
 
 public class MedianofSortedArrays {
@@ -58,8 +57,8 @@ public class MedianofSortedArrays {
             arr1[i] = sc.nextInt();
         }
         //input array2
-        for(int i=0; i<n1; i++){
-            arr1[i] = sc.nextInt();
+        for(int i=0; i<n2; i++){
+            arr2[i] = sc.nextInt();
         }
         System.out.println(findMedianSortedArrays(arr1, arr2));
     }
