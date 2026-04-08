@@ -1,6 +1,7 @@
 import java.util.*;
 public class Longest_Palindrome_Substring {
     public static String lps(String s){
+        int n = s.length();
         
         return s;
     }
